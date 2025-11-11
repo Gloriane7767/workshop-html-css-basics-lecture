@@ -17,9 +17,32 @@ h1 {
 
 nav {
     background-color: rgb(156, 155, 155);
-    text-align: center;
     margin: 0px 20px 0px 20px;
-    padding: 10px ;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+/*Logo takes its natural width (40px)
+Nav-links gets flex: 1 - takes all remaining space
+Nav-links then uses justify-content: center to center its content within that space*/
+
+nav {
+display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
 }
 
 h2 {
@@ -43,7 +66,6 @@ p {
 a {
     color: rgb(249, 247, 247);
     text-decoration: none;
-    margin: 0 20px;
     font-size: 16px;
 }
 
